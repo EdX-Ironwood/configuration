@@ -202,3 +202,11 @@
   tags:
     - install
     - install:base
+
+- name: install codecov gem
+  shell: "gem install codecov"
+  become_user: "{{ rbenv_user }}"
+  environment: "{{ rbenv_environment }}"
+  tags:
+    - install
+    - install:base
