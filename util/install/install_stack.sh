@@ -171,7 +171,7 @@ elif [[ $stack == "fullstack" ]]; then # Install fullstack
     fi
 
     wiki_link="https://openedx.atlassian.net/wiki/display/OpenOPS/Running+Fullstack"
-    curl -fOL# https://raw.githubusercontent.com/edx/configuration/${OPENEDX_RELEASE}/vagrant/release/fullstack/Vagrantfile
+    curl -fOL https://raw.githubusercontent.com/edx/configuration/${OPENEDX_RELEASE}/vagrant/release/fullstack/Vagrantfile
     vagrant plugin install vagrant-hostsupdater
 else # Throw error
     echo -e "${ERROR}Unrecognized stack name, must be either devstack or fullstack!${NC}"
